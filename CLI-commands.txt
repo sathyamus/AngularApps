@@ -1,0 +1,8 @@
+
+- Install Angular CLI
+npm install -g @angular/cli@1.7
+
+- ng new <Project_Name>
+
+- ng serve [--port 8080]
+
