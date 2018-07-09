@@ -1,0 +1,47 @@
+<ng-content select="h2"></ng-content>
+
+<div class="container">
+    Parent title property: {{ title }}
+</div>
+
+<hr>
+<br>
+
+<div style="text-align: center">
+
+    <h2> Custom User module loaded </h2>
+
+    <div class="container">
+        <ul class="list-unstyled">
+            <li class="well">
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2">
+                            <img [src] = "user.image" class="img-responsive img-circle"/>
+                            <button class="btn btn-info btn-sm" (click)="moreInfo(user)">More Info</button>
+                    </div>
+                    <div class="col-xs-8 col-sm-8 col-md-8">
+                        <h2> {{user.firstName}} {{user.lastName}}  </h2>
+                        <p> DOB : <span [innerHTML]="user.dob"></span> </p>
+                        <p> Income : {{user.income}}</p>
+                        <!-- one way binding -->   
+                        <em> Initial Votes : {{user.votes}} </em>
+                        <br/>
+                        <!-- two way binding on change(event)-->   
+                        <em> total Votes : {{user.votes}}
+                        <!--    <input type="number"
+                            [value] = "user.votes"
+                            (change) = "user.votes = $event.target.value">
+                        -->
+                            <input type = "number" [(ngModel)]="user.votes">
+
+                        </em>  
+                        <br/>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<ng-content footer="footer"></ng-content>
