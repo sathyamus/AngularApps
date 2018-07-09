@@ -15,6 +15,7 @@ import { Component, Input } from '@angular/core';
 export class UserComponent {
 
     @Input('title') title : string;
+    @Input('user') user : User;
 
     moreInfo(user) {
         alert(`${user.firstName} ${user.lastName} is working With ${user.company}` );
@@ -52,15 +53,15 @@ export class UserComponent {
         console.log("on ngOnDestroy");
     }
 
-    user = {
-        firstName : "S",
-        lastName : "N",
-        dob : new Date("Mar 09 1945"),
-        income : 50000,
-        isWorking : true,
-        company : "SN Systems",
-        votes: 210,
-        image: 'assets/images/sathyams.png'
-    }
+    // user = {
+    //     firstName : "S",
+    //     lastName : "N",
+    //     dob : new Date("Mar 09 1945"),
+    //     income : 50000,
+    //     isWorking : true,
+    //     company : "SN Systems",
+    //     votes: 210,
+    //     image: 'assets/images/sathyams.png'
+    // }
 
 }

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { USER_DATA } from './data/mocks';
+import { User } from './model/user';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +9,27 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  user : User;
 
   ngOnInit() {
     console.log("on ngOnInit from parent");
+    this.user = USER_DATA;
+
   }
 
   ngOnChanges() {
     console.log("on ngOnChanges from parent");
-}
+  }
+
+  // user = {
+  //   firstName : "S",
+  //   lastName : "N",
+  //   dob : new Date("Mar 09 1945"),
+  //   income : 50000,
+  //   isWorking : true,
+  //   company : "SN Systems",
+  //   votes: 210,
+  //   image: 'assets/images/sathyams.png'
+  // }
+
 }

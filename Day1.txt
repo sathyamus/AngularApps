@@ -87,3 +87,12 @@ https://www.toptal.com/angular/angular-5-tutorial
 https://angular-templates.io/tutorials/about/learn-angular-from-scratch-step-by-step
 
 
+https://github.com/synergy2411/demo-soc-gen
+
+https://github.com/angular/angular-cli/wiki
+
+https://code.visualstudio.com/docs?start=true
+
+
+
+
