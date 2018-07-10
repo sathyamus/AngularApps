@@ -9,6 +9,14 @@ export class PipeDemoComponent implements OnInit {
 
   contact_number: number = 9986699866;
 
+  addTodo() {
+    this.todos.push({
+      label : "New Work",
+      status : "TODO"
+    })
+  }
+
+
   todos = [
     {
       label: "Work 1",
