@@ -18,13 +18,19 @@ export class AppComponent {
   ngOnInit() {
     console.log("on ngOnInit from parent");
     //this.users = USER_DATA;
+    
     // this.users = this.dataService.getUserData();
-    this.dataService.getJSonData()
-    .subscribe(
-      data => this.users = data,
-      err => console.log(err),
-      () => console.log("Completed")
-    );
+
+    // this.dataService.getJSonData()
+    // .subscribe(
+    //   data => this.users = data,
+    //   err => console.log(err),
+    //   () => console.log("Completed")
+    // );
+
+  this.dataService.getApiData().subscribe(
+    data => this.users = data);
+
   }
 
   ngOnChanges() {
