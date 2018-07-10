@@ -1,4 +1,4 @@
-import { Directive, ElementRef, HostListener, HostBinding } from '@angular/core'
+import { Input, Directive, ElementRef, HostListener, HostBinding } from '@angular/core'
 
 @Directive({
     selector: '[apphighlight]'
@@ -6,6 +6,7 @@ import { Directive, ElementRef, HostListener, HostBinding } from '@angular/core'
 
 export class HighlightDirective {
 
+    @Input('myColor') myColor: string;
     @HostBinding('style.backgroundColor') bgColor: string;
 
     @HostListener('mouseleave') mouse_leave() {

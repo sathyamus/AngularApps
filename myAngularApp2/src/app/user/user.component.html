@@ -11,6 +11,8 @@
 
     <h2> Custom User module loaded </h2>
 
+    JSON Pipe {{ users | json }}
+
     <div class="container">
         <ul class="list-unstyled">
             <li class="well" *ngFor="let user of users ; index as i ; first as isFirst; even as isEven">
@@ -22,13 +24,15 @@
                     </div>
                     <div class="col-xs-8 col-sm-8 col-md-8">
 
-                        <h2 apphighlight> {{user.firstName}} {{user.lastName}} </h2>
+                        <h2 apphighlight [myColor]="yellow"> {{user.firstName}} {{user.lastName | uppercase }} </h2>
 
                         <p [ngClass]="myClasses"> DOB :
-                            <span [innerHTML]="user.dob"></span>
+                            <span [innerHTML]="user.dob | date"></span>
                         </p>
 
-                        <p *ngIf="user.isWorking else ElseTemplate"> Income : {{user.income}}</p>
+                        <p *appUnless="user.isWorking"> appUnless Working </p>
+
+                        <p *ngIf="user.isWorking else ElseTemplate"> Income : {{user.income | currency : 'EUR':3.2-2 }}</p>
 
                         <!-- one way binding -->
                         <em> Initial Votes : {{user.votes}} </em>

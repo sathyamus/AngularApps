@@ -1,0 +1,24 @@
+<h3>
+  contant number : {{ contact_number | countryCode : 'IND' }} 
+
+  <br/>
+  <br/>
+  
+  {{ data | async | uppercase }}
+
+  <input type="text" [(ngModel)]="filteredStatus">
+  <br/>
+  <br/>
+
+  <ul class="list-group">
+    <li *ngFor="let todo of todos | filter : filteredStatus : 'status'" class="list-group-item">
+      {{ todo.label}}
+      <span class="badge">
+        {{ todo.status }}
+      </span>
+    </li>
+  </ul>
+
+
+
+</h3>

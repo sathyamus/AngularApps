@@ -5,11 +5,16 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
+import { CountryCodePipe } from './pipes/countrycode.pipe';
+import { FilterPipe } from './pipes/filter.pipe';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   // Components, Directives, Pipes 
   declarations: [
-    AppComponent, UserComponent, HighlightDirective
+    AppComponent, UserComponent, HighlightDirective, UnlessDirective, PipeDemoComponent, CountryCodePipe, FilterPipe, LoginComponent
 
   ],
   // Modules
