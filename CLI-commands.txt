@@ -6,3 +6,23 @@ npm install -g @angular/cli@1.7
 
 - ng serve [--port 8080]
 
+ng g d <DIRECTIVE_NAME>
+ng g c <COMPONENT_NAME>
+ng g s <SERVICE_NAME>
+ng g m <MODULE_NAME>
+ng g p <PIPE_NAME>
+
+
+ng g d directives/unless --spec false
+
+
+ng g c pipe-demo --spec false
+
+ng g c auth/login --spec false
+
+ng g c auth/register --spec false
+
+
+npm install --save firebase
+
+ng g s services/auth --spec false

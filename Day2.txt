@@ -1,5 +1,24 @@
 
-Directives:
+Promise 
+
+https://firebase.google.com/
+
+https://fir-soc-gen.firebaseio.com/userdata.json
+
+https://jsonlint.com/
+
+https://angular.io/guide/singleton-services
+
+https://alligator.io/angular/built-in-pipes-angular/
+
+
+Add Firebase to your web app
+
+npm install --save firebase
+
+
+Directives :
+--------------
 
 Component 
  - Template
@@ -13,3 +32,45 @@ Structural directives
  - ngIf
  - ngSwitch
  
+ 
+PS C:\Workspace\Angular\AngularApps\myAngularApp2> ng g d directives/unless --spec false
+  create src/app/directives/unless.directive.ts (141 bytes)
+  update src/app/app.module.ts (732 bytes)
+PS C:\Workspace\Angular\AngularApps\myAngularApp2>
+
+
+
+Pipes :
+---------
+
+PS C:\Workspace\Angular\AngularApps\myAngularApp2> ng g p pipe-demo --spec false
+  create src/app/pipe-demo.pipe.ts (205 bytes)
+  update src/app/app.module.ts (795 bytes)
+PS C:\Workspace\Angular\AngularApps\myAngularApp2>
+
+
+
+Forms :
+----------
+
+Template driven forms:
+-> Angular infers the form onject from the DOM
+-> App logic resides insde the template
+
+
+Model driven forms:
+-> Form is created programatically
+-> App logic resides insde the component
+-> Uses FormControl, FormGroup, FormBuilder
+
+FormControl -> Returns the individual control
+FormGroup -> Guops the individual control
+FormBuilder -> Builds the group and returns the FormGroup
+
+DI & Services :
+------------------
+
+
+
+
+
