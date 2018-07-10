@@ -1,4 +1,4 @@
-
+﻿
 #### Angular Intro
 
 Framework vs Library
@@ -93,6 +93,7 @@ https://github.com/angular/angular-cli/wiki
 
 https://code.visualstudio.com/docs?start=true
 
+knockout
 
 
 

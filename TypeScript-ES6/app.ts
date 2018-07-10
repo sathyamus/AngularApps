@@ -21,9 +21,8 @@ var {drawText} = myObject;
 drawText("Simple Text");
 
 var {drawText, drawCircle} = myObject;
-drawText("Simple Text");
+drawText("Sample Text");
 drawCircle(2);
-
 
 
 // Template String syntax
@@ -92,7 +91,7 @@ let numbersArr = [2,3,4,5];
 // ES5 syntax
 let newNumbersArr = numbersArr.map(function (v) {
     return v*2;
-})
+});
 
 console.log(numbersArr);
 console.log(newNumbersArr);
@@ -104,14 +103,14 @@ console.log(newNumbersArr2);
 
 
 function mystery() {
-    function chooseNumber() {
+    chooseNumber = function() {
         return 7;
     }
     return chooseNumber();
 
-    function chooseNumber() {
+    chooseNumber = function() {
         return 12;
     }
 }
 
-//console.log(mystery.chooseNumber());
+console.log(mystery()); // 7

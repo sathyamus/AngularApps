@@ -1,5 +1,5 @@
-import {Employee, MAGIC_NUMBER } from './Employee'
-import {Person} from './Person'
+import { Employee, MAGIC_NUMBER } from './Employee'
+import { Person } from './Person'
 
 // let foo = new Employee("Sathya", "P", 32);
 // console.log(foo.getFullName());

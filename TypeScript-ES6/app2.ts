@@ -9,6 +9,7 @@ class Toto{
         this.foo; // able to access foo which is created in constructor
         // not able to access bar, because bar variable is a type of Bar
         // if we are not specifying access specifier it changes the behaviour
+        // taking as type of Object
 
     }
 }
