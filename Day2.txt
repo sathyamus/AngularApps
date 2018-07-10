@@ -1,0 +1,15 @@
+
+Directives:
+
+Component 
+ - Template
+
+Attribute
+ - ngClass
+ - ngStyle
+ 
+Structural directives
+ - ngFor
+ - ngIf
+ - ngSwitch
+ 
