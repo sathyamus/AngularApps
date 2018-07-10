@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { USER_DATA } from './data/mocks';
+// import { USER_DATA } from './data/mocks';
 import { User } from './model/user';
 import { DataService } from './services/data.service';
 
@@ -18,7 +18,13 @@ export class AppComponent {
   ngOnInit() {
     console.log("on ngOnInit from parent");
     //this.users = USER_DATA;
-    this.users = this.dataService.getUserData();
+    // this.users = this.dataService.getUserData();
+    this.dataService.getJSonData()
+    .subscribe(
+      data => this.users = data,
+      err => console.log(err),
+      () => console.log("Completed")
+    );
   }
 
   ngOnChanges() {

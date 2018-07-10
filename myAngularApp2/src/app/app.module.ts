@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './user/user.component';
@@ -21,7 +22,7 @@ import { DataService} from './services/data.service';
   ],
   // Modules
   imports: [
-    BrowserModule, FormsModule, ReactiveFormsModule
+    BrowserModule, FormsModule, ReactiveFormsModule, HttpModule
   ],
   // Services
   providers: [DataService],
