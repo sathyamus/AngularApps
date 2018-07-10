@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 // import { USER_DATA } from './data/mocks';
 import { User } from './model/user';
 import { DataService } from './services/data.service';
+import * as firebase from 'firebase';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +11,15 @@ import { DataService } from './services/data.service';
 })
 export class AppComponent {
   title = 'app';
-  users : User[];
+  users: User[];
 
 
-  constructor(private dataService : DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
     console.log("on ngOnInit from parent");
     //this.users = USER_DATA;
-    
+
     // this.users = this.dataService.getUserData();
 
     // this.dataService.getJSonData()
@@ -28,9 +29,13 @@ export class AppComponent {
     //   () => console.log("Completed")
     // );
 
-  this.dataService.getApiData().subscribe(
-    data => this.users = data);
+    this.dataService.getApiData().subscribe(
+      data => this.users = data);
 
+    firebase.initializeApp({
+            apiKey: "AIzaSyDCsoL5_5lzp5vPh_SyjwWLSddscWOJVT0",
+            authDomain: "fir-soc-gen.firebaseapp.com"
+    });
   }
 
   ngOnChanges() {

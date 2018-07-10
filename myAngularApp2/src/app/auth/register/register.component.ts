@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, FormBuilder,Validators } from '@angular/forms';
+import { AuthService } from '../../services/auth.service';
+
 
 @Component({
   selector: 'app-register',
@@ -24,6 +26,10 @@ export class RegisterComponent implements OnInit {
   register() {
     //alert("Registration!!!");
     console.log(this.registerForm);
+    this.authService.registerUser(
+      this.registerForm.value.username,
+    this.registerForm.value.password);
+
   }
 
   hasExclamation (input : FormControl) {
@@ -32,7 +38,7 @@ export class RegisterComponent implements OnInit {
   }
 
 
-  constructor(private formBuilder : FormBuilder) {
+  constructor(private formBuilder : FormBuilder, private authService : AuthService) {
 
     this.registerForm = this.formBuilder.group( {
       username : this.username,

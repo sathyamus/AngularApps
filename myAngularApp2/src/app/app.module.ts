@@ -14,6 +14,7 @@ import { FilterPipe } from './pipes/filter.pipe';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { DataService} from './services/data.service';
+import { AuthService } from './services/auth.service';
 
 @NgModule({
   // Components, Directives, Pipes 
@@ -26,7 +27,7 @@ import { DataService} from './services/data.service';
     BrowserModule, FormsModule, ReactiveFormsModule, HttpModule, HttpClientModule
   ],
   // Services
-  providers: [DataService],
+  providers: [DataService, AuthService],
   bootstrap: [AppComponent] // to load the components in index.html (main page)
 })
 export class AppModule { }
