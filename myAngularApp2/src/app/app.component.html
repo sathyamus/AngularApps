@@ -7,22 +7,34 @@
 </div>
 
 <div class="container">
+  <app-register></app-register>
+</div>
+
+<!--
+
+<div class="container">
   <app-login></app-login>
 </div>
+  
+-->
 
 
 <div class="container">
   <app-pipe-demo></app-pipe-demo>
 </div> 
 
+<!--
 
 <div class="container">
   <input type="text" [(ngModel)]="title">
 </div>
 
+-->
+
 <app-user [title]="title" [users]="users">
   <h2> Welcome to {{ title }}</h2>
   <footer> (c) SN Sysyems 2018</footer>
 </app-user>
+
 
 
