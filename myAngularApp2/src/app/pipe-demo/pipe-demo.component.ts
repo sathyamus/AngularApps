@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipeDemoComponent implements OnInit {
 
+  // default status to allow loading the full list
+  filteredStatus = "";
+
   contact_number: number = 9986699866;
 
   addTodo() {
