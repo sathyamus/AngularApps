@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { User } from '../model/user';
+import { DataService } from '../services/data.service';
 
 @Component({
     selector: 'app-user',
@@ -16,7 +17,8 @@ import { User } from '../model/user';
 export class UserComponent {
 
     @Input('title') title: string;
-    @Input('users') users: User[];
+    //@Input('users') users: User[];
+    users : User[];
 
     myClasses = {
         myBorder: true,
@@ -29,17 +31,18 @@ export class UserComponent {
         this.myClasses.myBorder = false;
     }
 
-    constructor() {
+    constructor(private dataService : DataService) {
         console.log("calling constructor");
+        this.dataService.getApiData().subscribe( data => this.users = data);
     }
 
     ngOnInit() {
         console.log("on ngOnInit");
     }
 
-    ngOnChanges() {
-        console.log("on ngOnChanges");
-    }
+    // ngOnChanges() {
+    //     console.log("on ngOnChanges");
+    // }
 
     // ngAfterContentInit() {
     //     console.log("on ngAfterContentInit");

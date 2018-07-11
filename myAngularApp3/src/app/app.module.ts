@@ -23,6 +23,7 @@ import { AuthService } from './services/auth.service';
 
 import { AuthInterceptorService } from './services/auth-interceptor.service';
 import { LoggerInterceptorService } from './services/logger-interceptor.service';
+import { LoginGaurdService } from './services/login-gaurd.service';
 
 import { APP_ROUTES } from './app.routes';
 
@@ -60,7 +61,7 @@ import { APP_ROUTES } from './app.routes';
       provide: HTTP_INTERCEPTORS,
       useClass: LoggerInterceptorService,
       multi: true
-    }
+    }, LoginGaurdService
   ],
   bootstrap: [AppComponent] // to load the components in index.html (main page)
 })
