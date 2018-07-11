@@ -14,6 +14,9 @@ export class AppComponent {
   title = 'app';
   users: User[];
 
+
+  htmlSnippets = "<script> alert('popup') </script>";
+  
   isAuthenticated = false;
 
   constructor(private dataService: DataService, private authService : AuthService ) {
