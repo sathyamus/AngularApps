@@ -1,0 +1,16 @@
+h2 {
+    color: orange
+}
+
+.myBorder {
+    border: 2px greenyellow solid;
+}
+
+.myText {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.myColor {
+    color: blueviolet;
+}

@@ -1,0 +1,15 @@
+
+lifelong.learner2040@gmail.com
+
+https://console.firebase.google.com
+
+Authentication:
+	Click on Web Setup -> to get the apiKey and authDomain
+
+	Click on Sign-in method, enable Email/Password
+
+Database:
+	Click Database, Start in test mode.
+	Select 'Realtime Database'
+	Click on ... and import json.
+	
