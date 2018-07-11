@@ -1,15 +1,22 @@
 
-lifelong.learner2040@gmail.com
+Authentication using Token based
 
-https://console.firebase.google.com
 
-Authentication:
-	Click on Web Setup -> to get the apiKey and authDomain
+Routing:
+----------	
 
-	Click on Sign-in method, enable Email/Password
 
-Database:
-	Click Database, Start in test mode.
-	Select 'Realtime Database'
-	Click on ... and import json.
+Add missing  routes and query params added
+
+
+
+Modules:
+-----------
+Grouping components, directives, pipes and services that are related
+
+Module Types
+	Root Module
+	Feature Module
 	
+Modules can be instantiated lazily
+
