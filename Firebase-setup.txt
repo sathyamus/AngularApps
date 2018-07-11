@@ -1,0 +1,42 @@
+
+lifelong.learner2040@gmail.com
+
+https://console.firebase.google.com
+
+Authentication:
+	Click on Web Setup -> to get the apiKey and authDomain
+
+	Click on Sign-in method, enable Email/Password
+
+Database:
+	Click Database, Start in test mode.
+	Select 'Realtime Database'
+	Click on ... and import json.
+	
+	
+https://sathya-angular-app.firebaseio.com/userdata.json	
+
+{
+    "rules": {
+        ".read": true,
+        ".write": true
+    }
+}
+
+Response:
+[{"company":"SN Systems","dob":"Mar 09 1945","firstName":"Sathya","image":"assets/images/sathyams.png","income":500000,"isWorking":true,"lastName":"P","votes":290},{"company":"Apple Inc","dob":"February 24 1955","firstName":"Steve","image":"assets/images/steve.jpg","income":0,"isWorking":false,"lastName":"Jobs","votes":21290},{"company":"Amazon","dob":"Jan 12 1964","firstName":"Jeff","image":"assets/images/jeff.jpg","income":14090,"isWorking":true,"lastName":"Bezos","votes":29000}]
+
+
+{
+    "rules": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+    }
+}
+	
+Response:
+{
+  "error" : "Permission denied"
+}
+
+
