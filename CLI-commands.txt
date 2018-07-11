@@ -26,3 +26,16 @@ ng g c auth/register --spec false
 npm install --save firebase
 
 ng g s services/auth --spec false
+
+
+ng g s services/auth-interceptor --spec false
+
+ng g s services/logger-interceptor --spec false
+
+ng g s services/loginGaurd --spec false
+
+ng g c products/product --spec false
+ 
+ng g c products/overview --spec false
+
+ng g c products/specification --spec false
