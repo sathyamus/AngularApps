@@ -33,8 +33,8 @@ export class AppComponent {
       data => this.users = data);
 
     firebase.initializeApp({
-            apiKey: "AIzaSyDCsoL5_5lzp5vPh_SyjwWLSddscWOJVT0",
-            authDomain: "fir-soc-gen.firebaseapp.com"
+      apiKey: "AIzaSyACa_o6hpMxPpzQcsx0jUKgirtnTiEZmEE",
+      authDomain: "sathya-angular-app.firebaseapp.com"
     });
   }
 
