@@ -4,6 +4,9 @@ import { RegisterComponent } from './auth/register/register.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { UserComponent } from './user/user.component';
 import { LoginGaurdService } from './services/login-gaurd.service';
+import { ProductsComponent } from './products/products.component';
+import { OverviewComponent } from './products/overview/overview.component';
+import { SpecificationComponent } from './products/specification/specification.component';
 
 
 export const APP_ROUTES: Routes = [{
@@ -20,9 +23,25 @@ export const APP_ROUTES: Routes = [{
     path: 'pipe',
     component: PipeDemoComponent
 }, {
-    path: 'users', 
+    path: 'users',
     component: UserComponent,
     canActivate: [LoginGaurdService]
+}, {
+    path: 'products',
+    component: ProductsComponent,
+    children : [
+        {
+            path: '',
+            redirectTo : 'overview',
+            pathMatch: 'full'
+        }, {
+            path: 'overview',
+            component: OverviewComponent
+        }, {
+            path:'spec',
+            component: SpecificationComponent
+        }
+    ]
 }, {
     path: '**', //http://localhost:4200/notexist 
     redirectTo: 'login',

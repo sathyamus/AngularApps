@@ -26,6 +26,9 @@ import { LoggerInterceptorService } from './services/logger-interceptor.service'
 import { LoginGaurdService } from './services/login-gaurd.service';
 
 import { APP_ROUTES } from './app.routes';
+import { ProductsComponent } from './products/products.component';
+import { OverviewComponent } from './products/overview/overview.component';
+import { SpecificationComponent } from './products/specification/specification.component';
 
 @NgModule({
   // Components, Directives, Pipes 
@@ -38,7 +41,10 @@ import { APP_ROUTES } from './app.routes';
     CountryCodePipe,
     FilterPipe,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductsComponent,
+    OverviewComponent,
+    SpecificationComponent
 
   ],
   // Modules

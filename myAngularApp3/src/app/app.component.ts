@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { User } from './model/user';
 import { DataService } from './services/data.service';
 import * as firebase from 'firebase';
+import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +14,12 @@ export class AppComponent {
   title = 'app';
   users: User[];
 
+  isAuthenticated = false;
 
-  constructor(private dataService: DataService) { }
+  constructor(private dataService: DataService, private authService : AuthService ) {
+    // FIX ME : not working 
+    this.isAuthenticated = this.authService.isAuthenticated();
+   }
 
   ngOnInit() {
     console.log("on ngOnInit from parent");
