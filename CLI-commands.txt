@@ -5,6 +5,13 @@ npm install -g @angular/cli@1.7
 - ng new <Project_Name>
 
 - ng serve [--port 8080]
+ng serve --prod // not recomonded 
+
+*******************************************
+
+ng build --prod --aot
+
+*******************************************
 
 ng g d <DIRECTIVE_NAME>
 ng g c <COMPONENT_NAME>

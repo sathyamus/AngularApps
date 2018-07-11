@@ -1,12 +1,24 @@
 
+Authentication:
+-----------------
+
+ERROR HttpErrorResponse {headers: HttpHeaders, status: 401, statusText: "Unauthorized", url: "https://sathya-angular-app.firebaseio.com/userdata.json?auth=undefined", ok: false, …}
+....
+GET https://sathya-angular-app.firebaseio.com/userdata.json?auth=undefined 401 (Unauthorized)
+
+
 Authentication using Token based
 
 
 Routing:
 ----------	
 
+Basic routing
+nested Routing navigation
+Routing navigation using code
 
 Add missing  routes and query params added
+
 
 
 

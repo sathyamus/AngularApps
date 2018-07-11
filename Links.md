@@ -1,6 +1,13 @@
 
 ### Good Links
 
+https://angular.io/guide/quickstart
+
+https://material.angular.io/guide/getting-started
+
+Augury Chrome Extension - offered by Rangle.io
+
+
 https://www.dunebook.com/angular-ide/ \
 https://www.icicletech.com/blog/angular-2-ecosystem-review-top-angular-code-editors 
 
