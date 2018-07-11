@@ -41,25 +41,25 @@ export class UserComponent {
         console.log("on ngOnChanges");
     }
 
-    ngAfterContentInit() {
-        console.log("on ngAfterContentInit");
-    }
+    // ngAfterContentInit() {
+    //     console.log("on ngAfterContentInit");
+    // }
 
-    ngAfterContentChecked() {
-        console.log("on ngAfterContentChecked");
-    }
+    // ngAfterContentChecked() {
+    //     console.log("on ngAfterContentChecked");
+    // }
 
-    ngAfterViewInit() {
-        console.log("on ngAfterViewInit");
-    }
+    // ngAfterViewInit() {
+    //     console.log("on ngAfterViewInit");
+    // }
 
-    ngAfterViewChecked() {
-        console.log("on ngAfterViewChecked");
-    }
+    // ngAfterViewChecked() {
+    //     console.log("on ngAfterViewChecked");
+    // }
 
-    ngOnDestroy() {
-        console.log("on ngOnDestroy");
-    }
+    // ngOnDestroy() {
+    //     console.log("on ngOnDestroy");
+    // }
 
     // user = {
     //     firstName : "S",
