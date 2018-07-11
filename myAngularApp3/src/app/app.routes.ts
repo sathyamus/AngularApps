@@ -7,6 +7,7 @@ import { LoginGaurdService } from './services/login-gaurd.service';
 import { ProductsComponent } from './products/products.component';
 import { OverviewComponent } from './products/overview/overview.component';
 import { SpecificationComponent } from './products/specification/specification.component';
+import { EmployeeComponent } from './employee-module/employee/employee.component';
 
 
 export const APP_ROUTES: Routes = [{
@@ -29,20 +30,24 @@ export const APP_ROUTES: Routes = [{
 }, {
     path: 'products',
     component: ProductsComponent,
-    children : [
+    children: [
         {
             path: '',
-            redirectTo : 'overview',
+            redirectTo: 'overview',
             pathMatch: 'full'
         }, {
             path: 'overview',
             component: OverviewComponent
         }, {
-            path:'spec',
+            path: 'spec',
             component: SpecificationComponent
         }
     ]
 }, {
+    path: 'employee',
+    component: EmployeeComponent
+},
+{
     path: '**', //http://localhost:4200/notexist 
     redirectTo: 'login',
     pathMatch: 'full'
